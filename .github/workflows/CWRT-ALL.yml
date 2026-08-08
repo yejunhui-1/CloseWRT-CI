@@ -6,6 +6,15 @@ name: CWRT-ALL
 
 #CI计划
 on:
+  #推送触发编译
+  push:
+    branches:
+      - main
+      - master
+    paths:
+      - 'Config/**'
+      - 'Scripts/**'
+      - '.github/workflows/**'
   #自动编译：每周一早上5点
   schedule:
     - cron: 0 21 * * 0
@@ -50,9 +59,9 @@ jobs:
       fail-fast: false
       #max-parallel: 4
       matrix:
-        CONFIG: [MT7981, MT7986]
+        CONFIG: [MT7981]
         REPO_INFO:
-          - {SOURCE: "Yuzhii0718/immortalwrt-mt798x-6.6-padavanonly", BRANCH: "openwrt-24.10-6.6"}
+          - {SOURCE: "yejunhui-1/immortalwrt-mt798x-6.6", BRANCH: "openwrt-24.10-6.6"}
           #- {SOURCE: "chasey-dev/immortalwrt-mt798x-rebase", BRANCH: "25.12"}
 
     #调用公用编译核心WRT-CORE.yml
