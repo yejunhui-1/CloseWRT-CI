@@ -6,7 +6,7 @@ name: CWRT-ALL
 
 #CI计划
 on:
-  #推送触发编译
+  # 推送触发编译
   push:
     branches:
       - main
