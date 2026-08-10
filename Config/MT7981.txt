@@ -11,3 +11,17 @@ CONFIG_MTK_FIRST_IF_MT7981=y
 CONFIG_MTK_MT7981_NEW_FW=n
 CONFIG_WARP_CHIPSET="mt7981"
 CONFIG_WARP_NEW_FW=n
+#iStore
+CONFIG_PACKAGE_luci-app-quickstart=y
+CONFIG_PACKAGE_luci-app-store=y
+CONFIG_PACKAGE_quickstart=y
+CONFIG_PACKAGE_taskd=y
+CONFIG_PACKAGE_luci-lib-taskd=y
+CONFIG_PACKAGE_luci-lib-xterm=y
+#RAID
+CONFIG_PACKAGE_kmod-md-mod=y
+CONFIG_PACKAGE_kmod-md-raid0=y
+CONFIG_PACKAGE_kmod-md-raid1=y
+CONFIG_PACKAGE_kmod-md-raid10=y
+CONFIG_PACKAGE_mdadm=y
+CONFIG_PACKAGE_bash=y
